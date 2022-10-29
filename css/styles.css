@@ -18,11 +18,20 @@
     color: var(--primary-text-color);
 }
 
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    outline: 2px solid;
+}
+
 .link {
     text-decoration: none;
 }
 
 .list {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
@@ -88,9 +97,12 @@
 
 .hero {
     background: var(--background-color);
+    text-align: center;
 }
 
 .hero-text {
+    margin-top: 0;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
