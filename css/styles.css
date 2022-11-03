@@ -22,7 +22,7 @@
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    outline: 2px solid;
+    /* outline: 2px solid; */
 }
 
 .section {
@@ -209,6 +209,24 @@ ul {
     color: var(--white-text-color);
 }
 
+.main-group {
+    padding-top: 0;
+}
+
+.main-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.main-images > .item {
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+.main-buttons {
+    padding-bottom: 34px;
+}
+
 .hero-hidden-text {
     border: 0;
     clip: rect(1px, 1px, 1px, 1px);
@@ -222,7 +240,18 @@ ul {
     word-wrap: normal !important;
 }
 
-.offer-list-item {
+.main-filter {
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-filter .item + .item {
+    margin-left: 30px;
+}
+
+.offer-list {
     width: 370px;
     height: 404px;
     left: 215px;
@@ -232,12 +261,16 @@ ul {
 }
 
 .offer-name {
+    margin-left: 24px;
+    margin-top: 20px;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
 
-.offer-list {
+.offer {
+    margin-left: 24px;
+    margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
